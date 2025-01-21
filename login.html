@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: black;
+            color: white;
+            background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fawokonewspaper.sl%2Fsierra-leone-limkokwing-to-explain-le2-6b-over-payment%2F&psig=AOvVaw2uQgokWagdVwL0pKjsvIyP&ust=1733275820262000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJCCyZami4oDFQAAAAAdAAAAABAE);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            
+            
+        }
+        .login-container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: black;
+            text-transform: capitalize;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: black;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            color: black;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #0056b3;
+        }.form-group button a{
+            text-decoration: none;
+            font-size: large;
+            color: white;
+        }
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login To The Student Portal </h2>
+        <form id="loginForm" action="index.html" method="GET">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

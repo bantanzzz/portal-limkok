@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Portal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Limkokwing Sierra Leone Application for Admission</h1>
+    <h2>Student Registration Portal</h2>
+    <form action="process_registration.php" method="POST">
+      <!-- Section 1: Preliminary Information -->
+      <fieldset>
+        <legend>Section 1: Preliminary Information</legend>
+        <label for="course">Course:</label>
+        <input type="text" id="course" name="course" required>
+        
+        <label for="semester">Semester:</label>
+        <select id="semester" name="semester" required>
+          <option value="">Select Semester</option>
+          <option value="Semester 1">Semester 1</option>
+          <option value="Semester 2">Semester 2</option>
+        </select>
+        
+        <p>How did you hear about us?</p>
+        <input type="checkbox" name="source[]" value="Friends"> Friends
+        <input type="checkbox" name="source[]" value="Social Media"> Social Media
+        <input type="checkbox" name="source[]" value="Website"> Website
+        <input type="checkbox" name="source[]" value="Advertisement"> Advertisement
+        <input type="checkbox" name="source[]" value="Open Day"> Open Day
+      </fieldset>
+
+      <!-- Section 2: Personal Information -->
+      <fieldset>
+        <legend>Section 2: Personal Information</legend>
+        <label for="full_name">Full Name:</label>
+        <input type="text" id="full_name" name="full_name" required>
+        
+        <label for="place_of_birth">Place of Birth:</label>
+        <input type="text" id="place_of_birth" name="place_of_birth">
+        
+        <label for="race">Race:</label>
+        <input type="text" id="race" name="race">
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        
+        <label for="marital_status">Marital Status:</label>
+        <input type="text" id="marital_status" name="marital_status">
+        
+        <label for="telephone">Telephone:</label>
+        <input type="tel" id="telephone" name="telephone">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        
+        <label for="permanent_address">Permanent Address:</label>
+        <textarea id="permanent_address" name="permanent_address"></textarea>
+        
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        
+        <label for="current_address">Current Address:</label>
+        <textarea id="current_address" name="current_address"></textarea>
+      </fieldset>
+
+      <!-- Section 3: Parent Information -->
+      <fieldset>
+        <legend>Section 3: Parent Information</legend>
+        <label for="father_name">Father's Name:</label>
+        <input type="text" id="father_name" name="father_name">
+        
+        <label for="mother_name">Mother's Name:</label>
+        <input type="text" id="mother_name" name="mother_name">
+        
+        <label for="parent_tel">Parent's Telephone:</label>
+        <input type="tel" id="parent_tel" name="parent_tel">
+        
+        <label for="parent_address">Company Name & Address:</label>
+        <textarea id="parent_address" name="parent_address"></textarea>
+        
+        <label for="parent_email">Parent's Email:</label>
+        <input type="email" id="parent_email" name="parent_email">
+      </fieldset>
+
+      <!-- Section 4: Emergency Contact -->
+      <fieldset>
+        <legend>Section 4: Emergency Contact Details</legend>
+        <label for="emergency_name">Person Name:</label>
+        <input type="text" id="emergency_name" name="emergency_name">
+        
+        <label for="emergency_relation">Relationship:</label>
+        <input type="text" id="emergency_relation" name="emergency_relation">
+        
+        <label for="emergency_email">Email:</label>
+        <input type="email" id="emergency_email" name="emergency_email">
+      </fieldset>
+
+      <button type="submit">Submit Registration</button>
+    </form>
+  </div>
+</body>
+</html>
